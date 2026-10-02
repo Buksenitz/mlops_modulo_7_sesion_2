@@ -1,5 +1,5 @@
-project_id = "<PROYECT_ID>"
-dataset_id = "<DATASET_ID>"
+project_id = "carbide-crowbar-507600-m3"
+dataset_id = "terraform"
 table_id = "census_by_age"
 region     = "US"
 routine_id = "cencus_filter_by_age"

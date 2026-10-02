@@ -34,11 +34,11 @@ jobs:
           terraform_version: 1.0.0
 
       - name: Initialize Terraform
-              run: |
-                cd terraform_vertex
-                terraform init
+        run: |
+          cd terraform_vertex
+          terraform init
 
       - name: Apply Terraform
         run: |
           cd terraform_vertex
-          terraform apply -var="dataset_id=${{ secrets.DATASET_ID }}" -auto-approve
+          terraform apply -auto-approve

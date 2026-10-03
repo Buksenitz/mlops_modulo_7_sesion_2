@@ -40,6 +40,7 @@ gcloud projects add-iam-policy-binding $PROJECT_ID \
   --role="roles/run.admin"
 
 
+#impersonalizacion de cuenta de servicio, cuando se quiere agregar permisos desde otra cuenta de servicios
 gcloud iam service-accounts add-iam-policy-binding $SA_CLOUD_RUN \
   --member="serviceAccount:$SA_GITHUB" \
   --role="roles/iam.serviceAccountUser"

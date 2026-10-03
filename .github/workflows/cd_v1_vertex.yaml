@@ -45,5 +45,5 @@ jobs:
 
       - name: Execute notebook
         run: |
-          source ven/bin/activate
+          source venv/bin/activate
           papermill my_app/pipeline_bigquery_component.ipynb my_app/output.ipynb -k venv

@@ -40,7 +40,7 @@ jobs:
 
       - name: Register Jupyter kernel
         run: |
-          source ven/bin/activate
+          source venv/bin/activate
           python -m ipykernel install --user --name=venv
 
       - name: Execute notebook
